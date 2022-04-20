@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <link rel="stylesheet" href="/statics/404_style.css">
+</head>
+
+<body>
+    <div class="cont_principal">
+        <div class="cont_error">
+
+            <h1>Oops</h1>
+            <p>The Page you're looking for isn't here.</p>
+            <p>You can go back <a href="/en"> Home</a></p>
+        </div>
+        <div class="cont_aura_1"></div>
+        <div class="cont_aura_2"></div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            document.querySelector('.cont_principal').className = "cont_principal cont_error_active";
+        }
+    </script>
+</body>
+
+</html>
