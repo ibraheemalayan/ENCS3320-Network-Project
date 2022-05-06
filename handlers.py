@@ -1,3 +1,7 @@
+"""
+handlers for different endpoints (paths)
+"""
+
 
 from http_codes import HTTPStatus
 from utils import generate_response, send_binary_file, send_text_file

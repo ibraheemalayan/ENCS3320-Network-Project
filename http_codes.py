@@ -1,3 +1,8 @@
+"""
+Enum for http codes with their messages (phrases)
+"""
+
+
 from enum import Enum
 
 __all__ = ['HTTPStatus']

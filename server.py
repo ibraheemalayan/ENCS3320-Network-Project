@@ -1,6 +1,5 @@
 """
- Implements a simple HTTP/1.0 Server
-
+The main script to start the http server (HTTP 1.0)
 """
 
 from os import path

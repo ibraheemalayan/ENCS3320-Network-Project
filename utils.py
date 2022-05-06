@@ -1,4 +1,8 @@
-from typing import BinaryIO, Dict, List, Tuple
+"""
+util functions and models for request, response
+"""
+
+from typing import Dict, List
 from datetime import datetime
 
 from os import path
