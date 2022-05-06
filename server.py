@@ -9,15 +9,19 @@ import socket
 from utils import Req
 from handlers import endpoints, not_found, return_static_file, not_found
 
+import cfg
+
 debug = False
 
 # Define socket host and port
 SERVER_HOST = '0.0.0.0'
 SERVER_PORT = 9090
 
+request: Req  = None
 
 if __name__ == "__main__":
     
+    request: Req  = None
     
     # Create socket
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -35,16 +39,16 @@ if __name__ == "__main__":
         client_connection, client_address = server_socket.accept()
     
         # Get the client request
-        request: Req = Req(client_connection.recv(1024).decode())
+        cfg.request = Req(client_connection.recv(1024).decode(), client_address)
         
-        if not request.valid:
-            request.log_invalid()
+        if not cfg.request.valid:
+            cfg.request.log_invalid()
             continue
             
         
-        request.log()
+        cfg.request.log()
         
-        requested_path = path.normpath(request.path)
+        requested_path = path.normpath(cfg.request.path)
         
         response = None
         

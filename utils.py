@@ -2,14 +2,15 @@ from typing import BinaryIO, Dict, List, Tuple
 from datetime import datetime
 
 from os import path
-
+import cfg
+        
 from http_codes import HTTPStatus
     
     
 class Req():
     ''' class to represent request '''
     
-    def __init__(self, request_text:str) -> None:
+    def __init__(self, request_text:str, client_address) -> None:
         
         lines: List[str] = request_text.split('\n')
         
@@ -21,6 +22,8 @@ class Req():
         
         self.method = splitted_line_1[0]
         self.path = splitted_line_1[1]
+        
+        self.client_address = client_address
         
         self.headers: Dict[str, str] = {}
         
@@ -49,7 +52,7 @@ class Req():
         
         else:
             
-            print(f"{datetime.now()}    {self.method}    {self.path:<45}\t", end="")
+            print(f"{datetime.now()} [{cfg.request.client_address[0]}:{cfg.request.client_address[1]}]    {self.method}    {self.path:<45}\t", end="")
 
 
         

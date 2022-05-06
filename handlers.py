@@ -2,11 +2,13 @@
 from http_codes import HTTPStatus
 from utils import generate_response, send_binary_file, send_text_file
 from os  import path
-
+import cfg
 
 def not_found():
     
-    return generate_response(code=HTTPStatus.NOT_FOUND, body_and_length=send_text_file(path.join("templates" ,"not_found.html")))
+    body, size = send_text_file(path.join("templates" ,"not_found.html"))
+
+    return generate_response(code=HTTPStatus.NOT_FOUND, body_and_length=(body.replace("{{client_data}}", f"{cfg.request.client_address[0]}:{cfg.request.client_address[1]}"), size))
     
 
 def redirect_to_google():
