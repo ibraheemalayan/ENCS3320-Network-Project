@@ -1,5 +1,7 @@
 # ENCS3320 Computer Networks First Project
 
+## [Part 1](part_1.md)
+
 a simple HTTP 1.0 web server built with python 3
 
 ![Sample Run 14](https://i.ibb.co/cwjJKJG/ENCS3320-webp-14-comppressed.webp)
@@ -39,7 +41,7 @@ a simple HTTP 1.0 web server built with python 3
 
 # Debug Mode
 
-To print plain text of http requests & responses (without body) set the variable `debug` in [server.py]() to **True**
+To print plain text of http requests & responses (without body) set the variable `debug` in [server.py](server.py#L13) to **True**
 
 #### sample output with debug set to true
 
