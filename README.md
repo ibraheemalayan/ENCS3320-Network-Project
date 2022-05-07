@@ -2,7 +2,7 @@
 
 a simple HTTP 1.0 web server built with python 3
 
-TODO : add gifs
+![Sample Run](https://i.ibb.co/SysGs5t/ENCS3320-webp-20fps.webp)
 
 # Setup
 
