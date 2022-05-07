@@ -1,6 +1,8 @@
 # ENCS3320 Computer Networks First Project
 
-## [Part 1](part_1.md)
+> View [Part 1](part_1.md)
+
+# Part 2
 
 a simple HTTP 1.0 web server built with python 3
 
