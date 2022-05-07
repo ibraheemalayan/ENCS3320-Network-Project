@@ -8,6 +8,8 @@ a simple HTTP 1.0 web server built with python 3
 
 ![Sample Run 14](https://i.ibb.co/cwjJKJG/ENCS3320-webp-14-comppressed.webp)
 
+> mobile screenshots below    
+
 ---------------------------------------------------------------------------
 
 # Setup
@@ -48,6 +50,18 @@ To print plain text of http requests & responses (without body) set the variable
 #### sample output with debug set to true
 
 ![debug set to true](https://i.ibb.co/8syCyhp/Screen-Shot-2022-05-07-at-14-59-30.png)
+
+# Mobile Screenshots
+
+Index 1                                                          |  Index 2
+:---------------------------------------------------------------:|:---------------------------------------------------------------:
+<img src="https://i.ibb.co/4pQ5zHH/IMG-1764.png" width="400vw">  |  <img src="https://i.ibb.co/GVD8KNJ/IMG-1765.png" width="400vw">
+
+Not Found                                                        |                     
+:---------------------------------------------------------------:|
+<img src="https://i.ibb.co/9qvT7Vf/IMG-1766.png" width="800vw">  |
+
+
 
 ---------------------------------------------------------------------------
 

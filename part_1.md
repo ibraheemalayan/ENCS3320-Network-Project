@@ -24,7 +24,7 @@ tracing all the routers from a virtual machine to a youtube server, the route co
 
 ![image](https://i.ibb.co/XsFQsb5/image.png)
 
-nslookup queried available `A` and `AAA` records for **www.youtube.com** from google's DNS server ( `8.8.8.8` ), Google responded with *20* records **( 16 `A`, 4 `AAA` )** for the same host in order to provide redundancy and fallbacks and some sort of DNS level load balancing.
+nslookup queried available `A` and `AAA` records for **www.youtube.com** from google's DNS server ( `8.8.8.8` ), Google responded with *20* records **( 16 `A`, 4 `AAA` )** for the same host in order to provide redundancy, fallbacks, and some sort of DNS level load balancing.
  
 
 
