@@ -2,7 +2,9 @@
 
 a simple HTTP 1.0 web server built with python 3
 
-![Sample Run](https://i.ibb.co/SysGs5t/ENCS3320-webp-20fps.webp)
+![Sample Run 20](https://i.ibb.co/SysGs5t/ENCS3320-webp-20fps.webp)
+![Sample Run 14](https://i.ibb.co/cwjJKJG/ENCS3320-webp-14-comppressed.webp)
+![Sample Run 12](https://i.ibb.co/8jVp7dK/ENCS3320-webp-12-comppressed.webp)
 
 # Setup
 
