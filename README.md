@@ -4,6 +4,8 @@ a simple HTTP 1.0 web server built with python 3
 
 ![Sample Run 14](https://i.ibb.co/cwjJKJG/ENCS3320-webp-14-comppressed.webp)
 
+---------------------------------------------------------------------------
+
 # Setup
 
 * install python **>= 3.9** and git
@@ -32,6 +34,18 @@ a simple HTTP 1.0 web server built with python 3
     > there are other endpoints like **/statics/** for static files (fonts, images, stylesheets ...)    
     > and for non existing paths, **404**, try http://localhost:9090/nothing_is_here
 
+
+---------------------------------------------------------------------------
+
+# Debug Mode
+
+To print plain text of http requests & responses (without body) set the variable `debug` in [server.py]() to **True**
+
+#### sample output with debug set to true
+
+![debug set to true](https://i.ibb.co/8syCyhp/Screen-Shot-2022-05-07-at-14-59-30.png)
+
+---------------------------------------------------------------------------
 
 # Author
 
