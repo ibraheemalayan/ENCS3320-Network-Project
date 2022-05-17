@@ -10,7 +10,7 @@ from handlers import endpoints, not_found, return_static_file, not_found
 
 import cfg
 
-debug = False
+debug = True
 
 # Define socket host and port
 SERVER_HOST = '0.0.0.0'

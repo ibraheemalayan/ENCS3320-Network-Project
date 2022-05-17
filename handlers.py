@@ -42,7 +42,7 @@ def redirect_to_birzeit():
 
 
 def index_en():
-    
+        
     return generate_response(code=HTTPStatus.OK, body_and_length=send_text_file(path.join("templates" ,"index_en.html")))
 
 def index_ar():
